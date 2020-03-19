@@ -18,6 +18,7 @@ fi
 # earlier versions of Meteor with --unsafe-perm or --allow-superuser
 # https://github.com/meteor/meteor/issues/7959
 export METEOR_ALLOW_SUPERUSER=true
+export METEOR_DEBUG_BUILD=1
 
 cd $APP_SOURCE_DIR
 
