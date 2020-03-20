@@ -8,13 +8,10 @@ fi
 
 printf "\n[-] Installing Node ${NODE_VERSION}...\n\n"
 
-NODE_DIST="node-v${NODE_VERSION}-linux-x64"
-NODE_URL="https://nodejs.org/dist/v${NODE_VERSION}/${NODE_DIST}.tar.gz"
-
-printf "\nNode URL: ${NODE_URL}\n"
+NODE_DIST=node-v${NODE_VERSION}-linux-x64
 
 cd /tmp
-curl -v -O -L ${NODE_URL}
+curl -v -O -L https://nodejs.org/dist/v${NODE_VERSION}/${NODE_DIST}.tar.gz
 tar xvzf ${NODE_DIST}.tar.gz
 rm ${NODE_DIST}.tar.gz
 rm -rf /opt/nodejs
